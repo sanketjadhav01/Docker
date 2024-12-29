@@ -1,0 +1,3 @@
+#docker save -o (tar file name) myweb.tar nginx
+#ls
+#docker load -i myweb.tar
