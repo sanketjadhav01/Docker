@@ -1,0 +1,4 @@
+------wordpress container------
+
+#docker run -d -e MYSQL_ROOT_PASSWORD= pass@123 -e MYSQL_DATABASE= wordpressdb -v /home/ec2-user/wordpressbackup:/var/lib/sql --name wpsql mysql
+#docker run -d -p80:80 -e WORDPRESS_DB_HOST = wpsql -e WORDPRESS_DB_USER = root -e WORDPRESS_DB_NAME= wordpress -e WORDPRESS_DB_PASSWORD= pass@123 --link wpsql:mysql --name wordpress wordpress
