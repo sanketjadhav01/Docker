@@ -1,11 +1,7 @@
-#nano Dockerfile
+mysql container comm.
+-e (environment variable)
 
-FROM mysql
-ENV MYSQL_ROOT_PASSWORD=Password
-ENV MYSQL_DATABASE=Database name
-EXPOSE 3306
-CMD ["mysqld"]
-
-#docker build -t imgname .
-#docker run -d --name conatinername imgname
-#docker exec -it conatinername /bin/bash
+#sudo su
+#docker run -d -e MYSQL_ROOT_PASSWORD=Pass@123 mysql
+#docker exec -it (container id) /bin/bash
+-mysql -u root -p
