@@ -1,6 +1,6 @@
-- Create a Directory:
+#whole architechture
+
 mkdir threetier
-- Create 3 directories inside threetier and one docker compose file:
 mkdir app web db
 nano docker-compose.yml
 
@@ -49,7 +49,7 @@ create one directory named myhtmlcode and inside this directory one index.html f
 Also one dockerfile and default.conf file
 
 # index.html:
-Hello.This is nginx .
+Hello it's me..
 
 # Dockerfile:
 
@@ -104,7 +104,7 @@ Also create one dockerfile file inside app directory
  
  # index.php:
  <?php
-echo "Hello. This is php.";
+echo "Hello, it's ur php";
 ?>
 
 # Dockerfile:
@@ -163,10 +163,10 @@ CMD ["mysqld"]
 
 nano init.sql
 
-create database insta;
-use insta;
-create table users(id int , name varchar(20));
-insert into users values(1,'ravi'),(2,'aliya');
+create database facebook;
+use facebook;
+create table users(id int , name varchar(50));
+insert into users values(2,'sanket');
 
 nano init.sh
 
