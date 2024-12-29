@@ -5,3 +5,4 @@ mysql container comm.
 #docker run -d -e MYSQL_ROOT_PASSWORD=Pass@123 mysql
 #docker exec -it (container id) /bin/bash
 -mysql -u root -p
+....
