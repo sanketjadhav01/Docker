@@ -1,0 +1,16 @@
+----mysql backup process----
+
+#sudo su
+#mkdir mybackup
+#docker run -d --name majhsql -v /home/ec2-user/mybackup/:/var/lib/mysql -e MYSQL_ROOT_PASS=pass@123 mysql
+#docker exec -it (container id) /bin/bash
+  +mysql -u root -p
+        pass:
+  +create database facebook;
+  +use facebook;
+  +create table posts(id int, name varchar(100));
+  +insert into posts values(1,"sanket");
+    ########data store as it is in backup folder#########
+#docker ps
+#docker rm $(docker ps -q)
+    #######same path just container name change here######### -(volume(mybackup) data..)
